@@ -1,0 +1,468 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  font-size: 1rem;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.header .navBar {
+  height: 50px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navBar div {
+  display: flex;
+  align-items: center;
+}
+
+.header .navBar__logo {
+  color: black;
+  font-size: 1.3em;
+  padding: 0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header .navBar__menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+}
+
+.header .navBar__menu li {
+  margin: 0 .4em;
+  position: relative;
+}
+
+.header .navBar__menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  padding: 1em;
+  display: block;
+}
+
+.header .navBar__menu li a:hover,
+.header .navBar__menu li a:focus {
+  background-color: gainsboro;
+}
+
+.header .navBar__menu li ul {
+  left: 0;
+  top: 50px;
+  padding: .3em 0;
+  text-align: left;
+  display: none;
+  min-width: 200px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 50;
+}
+
+.header .navBar__menu li ul li {
+  list-style: none;
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+.header .navBar__menu li ul li a {
+  font-size: .9em;
+  font-weight: 400;
+  margin: 0;
+  padding: .7em 1em;
+}
+
+.header .navBar__menu li ul li a:hover,
+.header .navBar__menu li ul li a:focus {
+  background-color: gainsboro;
+}
+
+.header .navBar__menu li:hover ul {
+  display: block;
+}
+
+.header .navBar__menu form {
+  position: relative;
+}
+
+.header .navBar__menu form input {
+  padding: 6px;
+  width: 300px;
+  background: transparent;
+  color: black;
+  font-size: 1.1em;
+  border: 1px solid #d8d8d8;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.header .navBar__menu form input:focus {
+  outline: none;
+}
+
+.header .navBar__menu form span {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  height: 2.5em;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(255, 0, 119, 0.95);
+  opacity: 0;
+  transition: .2s all ease-in;
+}
+
+.header .navBar__menu form span p {
+  margin: 0;
+  padding: .6em 0;
+  text-align: center;
+  font-size: 1em;
+}
+
+.header .navBar__menu form span.show {
+  opacity: 1;
+}
+
+.header .navBar__menu__btnCartMenu {
+  color: black;
+  padding: .8em 1.1em;
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+.header .navBar__menu__btnCartMenu i {
+  font-size: 1.4em;
+  vertical-align: bottom;
+  padding: 0;
+}
+
+.header .navBar__menu__btnCartMenu:hover {
+  background-color: #fff;
+}
+
+.header .navBar__menu__btnCartMenu-counter {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  font-size: .9em;
+  width: 16px;
+  text-align: center;
+  padding: 1px;
+}
+
+.header .navBar__menu.show {
+  top: 50px;
+}
+
+.header .navBar__btnCartResponsive {
+  color: black;
+  padding: .9em 1.2em;
+  margin: 0;
+  margin-right: 3em;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  display: none;
+}
+
+.header .navBar__btnCartResponsive i {
+  font-size: 1.5em;
+  vertical-align: bottom;
+  padding: 0;
+}
+
+.header .navBar__btnCartResponsive:hover {
+  background-color: #fff;
+}
+
+.header .navBar__btnCartResponsive-counter {
+  position: absolute;
+  top: 6px;
+  right: -1px;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  font-size: .9em;
+  width: 16px;
+  text-align: center;
+  padding: 1px;
+}
+
+.header .btn__nav {
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  background-image: url(../img/home.jpg);
+}
+
+.home__container {
+  height: 88vh;
+}
+
+.home__data {
+  padding-top: 6rem;
+  margin-left: 250px;
+}
+
+.home__title {
+  font-family: 'Bebas Neue', cursive;
+  align-self: center;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: .5rem;
+  margin-bottom: 4rem;
+  color: white;
+  font-weight: 1000;
+}
+
+.home__title span {
+  font-size: 40px;
+}
+
+.home__button {
+  display: inline;
+  background-color: #1c4a75;
+  color: #fff;
+  padding: 1rem;
+  font-size: 16px;
+  transition: .3s;
+}
+
+.home__button:hover {
+  background-color: #071b3c;
+  color: #fff;
+}
+
+.cart {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  bottom: 0;
+  right: -100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-family: 'Rubik', sans-serif;
+  transition: .4s linear all;
+}
+
+.cart.show {
+  right: 0px;
+}
+
+.cart.show .cart__sideContainer {
+  right: 0;
+}
+
+.cart__sideContainer {
+  font-size: 1em;
+  position: fixed;
+  right: -100%;
+  height: 100%;
+  width: 26%;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  background: #e7e7e7;
+  transition: .4s linear all;
+}
+
+.cart__sideContainer__title {
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-top: 1.7em;
+  padding: .6em 0 .8em 0;
+  cursor: pointer;
+  border-bottom: 2px #7f00b2 solid;
+}
+
+.cart__sideContainer__title i.fa-angle-right {
+  color: #7f00b2;
+  margin-left: .5em;
+  font-size: 1.9em;
+}
+
+.cart__sideContainer__title p {
+  font-size: 1.4em;
+  margin: 0;
+  font-weight: 500;
+}
+
+.cart__sideContainer__items {
+  width: 100%;
+  height: 55%;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.cart__sideContainer__items__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .6em 0;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.cart__sideContainer__items__item__main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+.cart__sideContainer__items__item__main p {
+  width: 200px;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.cart__sideContainer__items__item__main__btnDelete {
+  border: none;
+  background: none;
+  height: 30px;
+  width: 30px;
+  color: red;
+  font-size: 1.3em;
+  opacity: .6;
+  transition: .5s ease all;
+  cursor: pointer;
+}
+
+.cart__sideContainer__items__item__main__btnDelete:hover {
+  opacity: 1;
+}
+
+.cart__sideContainer__items__item__description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.cart__sideContainer__items__item__description img {
+  width: 70px;
+  height: 90px;
+}
+
+.cart__sideContainer__items__item__description__units {
+  display: flex;
+  align-items: center;
+}
+
+.cart__sideContainer__items__item__description__units p {
+  font-size: 1.1em;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.cart__sideContainer__items__item__description__units__btn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  height: 70px;
+  justify-content: space-between;
+}
+
+.cart__sideContainer__items__item__description__units__btn button {
+  border: none;
+  height: 30px;
+  width: 40px;
+  color: #fff;
+  transition: .5s ease all;
+}
+
+.cart__sideContainer__items__item__description__units__btn__add {
+  background: #000;
+  opacity: .3;
+}
+
+.cart__sideContainer__items__item__description__units__btn__add:hover {
+  opacity: .6;
+}
+
+.cart__sideContainer__items__item__description__units__btn__rest {
+  background: #000;
+  opacity: .3;
+}
+
+.cart__sideContainer__items__item__description__units__btn__rest:hover {
+  opacity: .6;
+}
+
+.cart__sideContainer__items__item__description__price {
+  font-size: 1.1em;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.cart__sideContainer__resume {
+  margin-top: .5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart__sideContainer__resume__total {
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.cart__sideContainer__resume__btnFinishBuy {
+  width: 100%;
+  margin-top: .5em;
+  visibility: hidden;
+  color: #fff;
+  font-size: 1em;
+  padding: .7em 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #7f00b2;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart__sideContainer__resume__btnFinishBuy.show {
+  visibility: visible;
+}
+
+/*Screen sizes*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html"*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html" y "footer"*/
+/*y dsp y hice un mixin:*/
+/*y cuando necesito utilizarlo lo llamo asi directamente :*/
