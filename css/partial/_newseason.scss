@@ -1,0 +1,29 @@
+.newSeason {
+    display: flex;
+    background: url(../img/newSeason.jpg);
+    height: 75vh;
+}
+
+.nsItem {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nsTitle {
+    font-size: 40px;
+}
+
+.nsButton {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nsImg {
+    height: 500px;
+}
