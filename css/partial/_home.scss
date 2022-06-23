@@ -2,7 +2,7 @@
     background-image: url(../img/home.jpg);
 
     &__container{
-        height: 88vh;
+        height: 100vh;
     }
     &__data{
         padding-top: 6rem;
@@ -28,6 +28,7 @@
         padding: 1rem;
         font-size: 16px;
         transition: .3s;
+        text-decoration: none;
         &:hover{
             background-color: #071b3c;
             color: #fff;

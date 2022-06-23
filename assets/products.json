@@ -1,0 +1,272 @@
+[
+    {
+        "id": 1,
+        "name":"Botines",
+        "price":16000,
+        "category":"Men Botines",
+        "year":"2022",
+        "imgFrontUrl":"botinesAzulesFront.png",
+        "imgBackUrl":"botinesAzulesBack.png"
+    },
+    {
+        "id": 2,
+        "name":"Botines",
+        "price":14700,
+        "category":"Men Botines",
+        "year":"2021",
+        "imgFrontUrl":"botinesRojosFront.png",
+        "imgBackUrl":"botinesRojosBack.png"
+    },
+    {
+        "id": 3,
+        "name":"Nike Air Force 1 high 07 60",
+        "price":18000,
+        "category":"Todos los productos Air Force",
+        "year":"2021",
+        "imgFrontUrl":"AirForce-1-high-07-60.jpg",
+        "imgBackUrl":"AirForce-1-high-07-60back.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Nike Special Project Air Force 1 Mid QS Sneakers Brown",
+        "price":19500,
+        "category":"Todos los productos Air Force",
+        "year":"2021",
+        "imgFrontUrl":"AirForce-BrownFront.png",
+        "imgBackUrl":"AirForce-BrownBack.png"
+    },
+    {
+        "id": 5,
+        "name":"Nike Air Force Shadow ",
+        "price":29000,
+        "category":"New Season Air Force",
+        "year":"2022",
+        "imgFrontUrl":"AirForce-ShadowFront.png",
+        "imgBackUrl":"AirForce-ShadowBack.png"
+    },
+    {
+        "id": 6,
+        "name":"Nike Air Jordan",
+        "price":20500,
+        "category":"New Season Air Jordan",
+        "year":"2021",
+        "imgFrontUrl":"AirJordan2.png",
+        "imgBackUrl":"AirJordan2.png"
+    },
+    {
+        "id": 7,
+        "name":"Nike Air Jordan",
+        "price":27500,
+        "category":"New Season Air Jordan",
+        "year":"2021",
+        "imgFrontUrl":"AirJordan-OrangeFront.png",
+        "imgBackUrl":"AirJordan-OrangeBack.png"
+    },
+    {
+        "id": 8,
+        "name":"Nike Air Jordan",
+        "price":29500,
+        "category":"New Season Woman Air Jordan",
+        "year":"2021",
+        "imgFrontUrl":"AirJordan_1.png",
+        "imgBackUrl":"AirJordan_1.png"
+    },
+    {
+        "id": 9,
+        "name":"Nike Air Jordan Red",
+        "price":23100,
+        "category":"New Season Woman Air Jordan",
+        "year":"2022",
+        "imgFrontUrl":"AirJordan_Red.png",
+        "imgBackUrl":"AirJordan_Red.png"
+    },
+    {
+        "id": 10,
+        "name":"Nike Air Jordan White and Black",
+        "price":37999,
+        "category":"New Season Woman Air Jordan",
+        "year":"2021",
+        "imgFrontUrl":"AirJordan_white_and_black.png",
+        "imgBackUrl":"AirJordan_white_and_black.png"
+    },
+    {
+        "id": 11,
+        "name":"Nike Air Jordan",
+        "price":27500,
+        "category":"New Season Woman Air Jordan",
+        "year":"2021",
+        "imgFrontUrl":"AirJordan_women.png",
+        "imgBackUrl":"AirJordan_women.png"
+    },
+    {
+        "id": 12,
+        "name":"Nike Air Jordan",
+        "price":28599,
+        "category":"New Season Woman Air Jordan",
+        "year":"2021",
+        "imgFrontUrl":"AirJordan1_WOMAN.png",
+        "imgBackUrl":"AirJordan1_WOMAN.png"
+    },
+    {
+        "id": 13,
+        "name":"Campera Sportswear Synthetic Fill",
+        "price":26999,
+        "category":"Woman Camperas Todos los productos",
+        "year":"2021",
+        "imgFrontUrl":"Campera_Sportswear_Synthetic_Fill_De_Mujer_front.png",
+        "imgBackUrl":"Campera_Sportswear_Synthetic_Fill_De_Mujer_back.png"
+    },
+    {
+        "id": 14,
+        "name":"Campera Sportswear Club FZ",
+        "price":13999,
+        "category":"Men Camperas Todos los productos",
+        "year":"2022",
+        "imgFrontUrl":"Campera_Sportswear_Club_FZ_Hombre_front.png",
+        "imgBackUrl":"Campera_Sportswear_Club_FZ_Hombre_back.png"
+    },
+    {
+        "id": 15,
+        "name":"Campera Down Fill Jacket",
+        "price":26999,
+        "category":"Men Camperas Todos los productos",
+        "year":"2021",
+        "imgFrontUrl":"Campera_down_fill_jacket_hombre_front.png",
+        "imgBackUrl":"Campera_down_fill_jacket_hombre_back.png"
+    },
+    {
+        "id": 16,
+        "name":"Campera Sportswear Air",
+        "price":14999,
+        "category":"Men Camperas Todos los productos",
+        "year":"2021",
+        "imgFrontUrl":"Campera_Hombre.png",
+        "imgBackUrl":"Campera_Hombre.png"
+    },
+    {
+        "id": 17,
+        "name":"Pantalon New Flow",
+        "price":13000,
+        "category":"Men pantalon",
+        "year":"2021",
+        "imgFrontUrl":"pantalonMan.png",
+        "imgBackUrl":"pantalonMan.png"
+    },
+    {
+        "id": 18,
+        "name":"Pantalon New Season",
+        "price":9500,
+        "category":"Men pantalon New Season",
+        "year":"2021",
+        "imgFrontUrl":"pantalonManAzul.png",
+        "imgBackUrl":"pantalonManAzul.png"
+    },
+    {
+        "id": 19,
+        "name":"Pantalon New Season",
+        "price":10599,
+        "category":"Men pantalon New Season",
+        "year":"2022",
+        "imgFrontUrl":"pantalonMangrey.png",
+        "imgBackUrl":"pantalonMangrey.png"
+    },
+    {
+        "id": 20,
+        "name":"Pantalon New Season",
+        "price":11499,
+        "category":"Men pantalon New Season",
+        "year":"2022",
+        "imgFrontUrl":"pantalonManbebe.png",
+        "imgBackUrl":"pantalonManbebe.png"
+    },
+    {
+        "id": 21,
+        "name":"Pantalon Fleece SportsWear",
+        "price":9999,
+        "category":"Men pantalon bermuda New Season",
+        "year":"2022",
+        "imgFrontUrl":"pantalonshort.png",
+        "imgBackUrl":"pantalonshort.png"
+    },
+    {
+        "id": 22,
+        "name":"Pantalon Fleece SportsWear",
+        "price":9999,
+        "category":"Men pantalon bermuda New Season",
+        "year":"2022",
+        "imgFrontUrl":"pantalonfleece-sportswear.jpg",
+        "imgBackUrl":"pantalonfleece-sportswear.jpg"
+    },
+    {
+        "id": 23,
+        "name":"Remera Men",
+        "price":9000,
+        "category":"Men remera",
+        "year":"2022",
+        "imgFrontUrl":"remeraMen.jpg",
+        "imgBackUrl":"remeraMen.jpg"
+    },
+    {
+        "id": 24,
+        "name":"Conjunto Pink",
+        "price":19500,
+        "category":"remera",
+        "year":"2022",
+        "imgFrontUrl":"remeraWoman.jpg",
+        "imgBackUrl":"remeraWoman.jpg"
+    },
+    {
+        "id": 25,
+        "name":"Short Running",
+        "price":11000,
+        "category":"woman",
+        "year":"2021",
+        "imgFrontUrl":"shortWoman.png",
+        "imgBackUrl":"shortWoman.png"
+    },
+    {
+        "id": 26,
+        "name":"Pantalon Soft",
+        "price":12999,
+        "category":"Pantalon Woman New Season",
+        "year":"2022",
+        "imgFrontUrl":"pantalonpinkWoman.png",
+        "imgBackUrl":"pantalonpinkWoman.png"
+    },
+    {
+        "id": 27,
+        "name":"Pantalon Soft",
+        "price":11999,
+        "category":"Pantalon Woman New Season",
+        "year":"2022",
+        "imgFrontUrl":"pantalongreyWoman.png",
+        "imgBackUrl":"pantalongreyWoman.png"
+    },
+    {
+        "id": 28,
+        "name":"Calza Crossfit",
+        "price":6900,
+        "category":"Woman calza",
+        "year":"2022",
+        "imgFrontUrl":"calzaAzulWoman.png",
+        "imgBackUrl":"calzaAzulWoman.png"
+    },
+    {
+        "id": 29,
+        "name":"Calza Running Woman",
+        "price":7500,
+        "category":"Woman calza running",
+        "year":"2022",
+        "imgFrontUrl":"calzanegra_logo_Woman.png",
+        "imgBackUrl":"calzanegra_logo_Woman.png"
+    },
+    {
+        "id": 30,
+        "name":"Calza Running Woman",
+        "price":9599,
+        "category":"Woman calza running",
+        "year":"2022",
+        "imgFrontUrl":"calzanegraWoman.png",
+        "imgBackUrl":"calzanegraWoman.png"
+    }
+]

@@ -145,7 +145,7 @@ payButton.addEventListener("click", () => {
         'Your purchase was processed successfully!',
         'success'
     )
-})
+});
 
 
 //---------------------------COUNTDOWN--------------------------------
