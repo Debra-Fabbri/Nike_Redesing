@@ -160,6 +160,179 @@ body {
     cursor: pointer;
     display: none; }
 
+@media only screen and (max-width: 575px) {
+  .header {
+    font-size: .8rem; }
+    .header .navBar {
+      width: 100%;
+      height: 50px; }
+      .header .navBar__logo {
+        padding: .6em 0;
+        margin: 0;
+        margin-left: .5em; }
+      .header .navBar__menu {
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: calc(100vh - 50px);
+        background: black;
+        top: -100vh;
+        text-align: center;
+        transition: .6s all ease;
+        flex-direction: column; }
+        .header .navBar__menu li {
+          width: 100%;
+          margin: .6em 0;
+          transition: .3s all ease; }
+        .header .navBar__menu li a {
+          padding: 1em 1em;
+          font-size: 1em;
+          font-weight: bold; }
+          .header .navBar__menu li a#btnNavProductos {
+            color: #fff; }
+        .header .navBar__menu li ul {
+          top: 40px;
+          text-align: center;
+          display: none;
+          min-width: 100%;
+          position: absolute; }
+          .header .navBar__menu li ul li a {
+            font-size: .9em;
+            margin: .3em 0;
+            padding: 1em; }
+        .header .navBar__menu form input {
+          font-size: 1.1em; }
+        .header .navBar__menu .navBar__menu__btnCartMenu {
+          display: none; }
+      .header .navBar__btnCartResponsive {
+        display: block; }
+    .header .btn__nav {
+      display: block;
+      margin-left: 1em; }
+      .header .btn__nav i {
+        padding: 4px 8px;
+        font-size: 1em; }
+        .header .btn__nav i:hover {
+          outline: 1px solid #fff; }
+      .header .btn__nav.active i {
+        font-weight: bold;
+        outline: 1px solid #fff; } }
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .header {
+    font-size: .9rem; }
+    .header .navBar {
+      width: 100%;
+      height: 50px; }
+      .header .navBar__logo {
+        padding: 0;
+        margin: 0;
+        margin-left: .5em; }
+      .header .navBar__menu {
+        position: fixed;
+        width: 100%;
+        height: calc(100vh - 50px);
+        margin: 0;
+        padding: 0;
+        background: black;
+        top: -100vh;
+        text-align: center;
+        transition: all ease .8s;
+        flex-direction: column; }
+        .header .navBar__menu li {
+          width: 100%;
+          margin: .6em 0; }
+        .header .navBar__menu li a {
+          padding: 1em;
+          font-size: 1em;
+          font-weight: bold; }
+          .header .navBar__menu li a#btnNavProductos {
+            color: #fff; }
+        .header .navBar__menu li ul {
+          top: 40px;
+          text-align: center;
+          min-width: 100%;
+          display: none;
+          position: absolute; }
+          .header .navBar__menu li ul li a {
+            font-size: .9em;
+            margin: .3em 0;
+            padding: 1em; }
+        .header .navBar__menu form input {
+          font-size: 1.1em; }
+        .header .navBar__menu .navBar__menu__btnCartMenu {
+          display: none; }
+      .header .navBar__btnCartResponsive {
+        display: block; }
+    .header .btn__nav {
+      display: block;
+      margin-left: 1em; }
+      .header .btn__nav i {
+        padding: 4px 8px; }
+        .header .btn__nav i:hover {
+          outline: 1px solid #fff; }
+      .header .btn__nav.active i {
+        font-weight: bold;
+        outline: 1px solid #fff; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header {
+    font-size: .9rem; }
+    .header .navBar {
+      width: 100%;
+      height: 50px; }
+      .header .navBar__logo {
+        padding: 0;
+        margin: 0;
+        margin-left: .5em; }
+      .header .navBar__menu {
+        position: fixed;
+        width: 100%;
+        height: calc(100vh - 50px);
+        margin: 0;
+        padding: 0;
+        background: black;
+        top: -100vh;
+        text-align: center;
+        transition: all ease .8s;
+        flex-direction: column; }
+        .header .navBar__menu li {
+          width: 100%;
+          margin: .6em 0; }
+        .header .navBar__menu li a {
+          padding: .8em 1em;
+          font-size: 1.1em;
+          font-weight: bold; }
+          .header .navBar__menu li a#btnNavProductos {
+            color: #fff; }
+        .header .navBar__menu li ul {
+          top: 40px;
+          text-align: center;
+          min-width: 100%;
+          display: none;
+          position: absolute; }
+          .header .navBar__menu li ul li a {
+            font-size: .9em;
+            margin: .3em 0;
+            padding: 1em; }
+        .header .navBar__menu form input {
+          font-size: 1.1em; }
+        .header .navBar__menu .navBar__menu__btnCartMenu {
+          display: none; }
+      .header .navBar__btnCartResponsive {
+        display: block; }
+    .header .btn__nav {
+      display: block;
+      margin-left: 1em; }
+      .header .btn__nav i {
+        padding: 4px 8px; }
+        .header .btn__nav i:hover {
+          outline: 1px solid #fff; }
+      .header .btn__nav.active i {
+        font-weight: bold;
+        outline: 1px solid #fff; } }
+
 .home {
   background-image: url(../img/home.jpg); }
   .home__container {
@@ -333,6 +506,75 @@ body {
         cursor: pointer; }
         .cart__sideContainer__resume__btnFinishBuy.show {
           visibility: visible; }
+
+@media only screen and (max-width: 575px) {
+  .cart {
+    right: -300vw;
+    z-index: 50;
+    width: 0px;
+    font-size: .9rem; }
+    .cart.show {
+      right: 0px; }
+      .cart.show .cart__sideContainer {
+        right: 0px; }
+    .cart__sideContainer {
+      right: -300vw;
+      width: 100vw;
+      padding: 0;
+      transition: .6s linear all; }
+      .cart__sideContainer__title {
+        margin: .5em 2em; }
+      .cart__sideContainer__items {
+        margin: 0 2em;
+        width: auto; }
+      .cart__sideContainer__resume__btnFinishBuy {
+        width: 90%; } }
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .cart {
+    right: -300vw;
+    z-index: 50;
+    width: 0px;
+    font-size: .9rem; }
+    .cart.show {
+      right: 0px; }
+      .cart.show .cart__sideContainer {
+        right: 0px; }
+    .cart__sideContainer {
+      right: -300vw;
+      width: 100vw;
+      padding: 0;
+      transition: .6s linear all; }
+      .cart__sideContainer__title {
+        margin: .5em 2em; }
+      .cart__sideContainer__items {
+        margin: 0 2em;
+        width: auto; }
+      .cart__sideContainer__resume__btnFinishBuy {
+        width: 90%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .cart {
+    right: -300vw;
+    z-index: 50;
+    width: 0px;
+    font-size: 1rem; }
+    .cart.show {
+      right: 0px; }
+      .cart.show .cart__sideContainer {
+        right: 0px; }
+    .cart__sideContainer {
+      right: -300vw;
+      width: 100vw;
+      padding: 0;
+      transition: .6s linear all; }
+      .cart__sideContainer__title {
+        margin: .5em 2em; }
+      .cart__sideContainer__items {
+        margin: 0 2em;
+        width: auto; }
+      .cart__sideContainer__resume__btnFinishBuy {
+        width: 90%; } }
 
 .newSeason {
   display: flex;
@@ -648,6 +890,23 @@ label {
   color: white;
   font-size: 30px;
   padding: 20px; }
+
+@media (max-width: 992px) {
+  .nsImg {
+    display: flex;
+    height: 400px; } }
+
+@media (max-width: 952px) {
+  .nsImg {
+    display: flex;
+    width: 400px;
+    height: 300px; } }
+
+@media (max-width: 470px) {
+  .nsImg {
+    display: flex;
+    width: 200px;
+    height: 200px; } }
 
 .productsInformation {
   font-size: 1rem;
