@@ -31,7 +31,7 @@
     </div>
     <div class="buyInformation">
         <div class="buyInformation__form">
-            <h2>Datos personales</h2>
+            <h2><strong>1</strong> - Datos personales</h2>
             <form action="#" name="comprarForm">
                 <input class="form-input" id="input-email" type="email" name="input" placeholder="Email">
                 <div class="form-element-multiple">
@@ -42,29 +42,490 @@
                     <input class="form-input" id="input-dni" type="number" name="input" placeholder="DNI">
                     <input class="form-input" id="input-phone" type="number" name="input" placeholder="Telefono">
                 </div>
+                <div class="compra-formulario">
+                    <div class="hide-me">
+                        <div class="row">
+                            <div class="col-sm-6 compra-datos-convenir">
+                                <div class="form-group">
+                                    <label for="cpr-convenir-localidad">Localidad *</label>
+                                    <input class="form-control" type="text" id="cpr-convenir-localidad-dummy"
+                                        name="cpr-convenir-localidad-dummy" disabled="disabled" value="Rosario"
+                                        placeholder="">
+                                    <input class="form-control" type="hidden" id="cpr-convenir-localidad"
+                                        name="cpr-convenir-localidad" value="Rosario" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 compra-datos-convenir">
+                                <div class="form-group">
+                                    <label for="cpr-convenir-provincia">Provincia *</label>
+                                    <input class="form-control" type="text" id="cpr-convenir-provincia-dummy"
+                                        name="cpr-convenir-provincia-dummy" disabled="disabled" value="Santa Fe"
+                                        placeholder="">
+                                    <input class="form-control" type="hidden" id="cpr-convenir-provincia"
+                                        name="cpr-convenir-provincia" value="Santa Fe" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="cpr-calle">Calle *</label>
+                                    <input class="form-control" type="text" id="cpr-calle" name="cpr-calle" value=""
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label for="cpr-altura">Número *</label>
+                                    <input class="form-control" type="text" id="cpr-altura" name="cpr-altura" value=""
+                                        placeholder="" maxlength="5">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label for="cpr-piso">Piso</label>
+                                    <input class="form-control" type="text" id="cpr-piso" name="cpr-piso" value=""
+                                        placeholder="" maxlength="2">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label for="cpr-dpto">Dpto</label>
+                                    <input class="form-control" type="text" id="cpr-dpto" name="cpr-dpto" value=""
+                                        placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="cpr-calle1">Entre calles</label>
+                                    <input class="form-control" type="text" id="cpr-calle1" name="cpr-calle1" value=""
+                                        placeholder="Calle 1">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="cpr-calle2">&nbsp;</label>
+                                    <input class="form-control" type="text" id="cpr-calle2" name="cpr-calle2" value=""
+                                        placeholder="Calle 2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="cpr-postal">Código Postal *</label>
+                                    <input class="form-control" type="text" id="cpr-postal-fake" name="cpr-postal-fake"
+                                        value="2000" disabled="disabled" placeholder="">
+                                    <input class="form-control" type="text" id="cpr-postal" name="cpr-postal"
+                                        value="2000" style="display: none;" placeholder="">
+                                    <a href="https://www.correoargentino.com.ar/formularios/cpa"
+                                        class="boton-codigo-postal" target="_blank">Averiguar mi código
+                                        postal</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="cpr-telefono">Teléfono *</label>
+                                    <input class="form-control" type="text" id="cpr-telefono" name="cpr-telefono"
+                                        value="" placeholder="" maxlength="13">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="row compra-contenedor-horarios">
+                            <div class="col-md-12">
+                                <h3>Preferencias de horario para recibir tu pedido</h3>
+                                <input class="form-control" type="hidden" id="cpr-persona-control"
+                                    name="cpr-persona-control" value="0" />
+                            </div>
+                            <div class="col-md-12">
+                                <p><i class="fal fa-truck"></i> Plazo de entrega a definir</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="compra-bloque-horario">
+                                    <input type="radio" id="cpr-horario-1" class="form-input" name="cpr-horario"
+                                        value="de 10:00 a 12:00hs">
+                                    <label class="compra-etiqueta-horario" for="cpr-horario-1"
+                                        data-horario="de 10:00 a 12:00hs">de 10:00 a 12:00hs</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="compra-bloque-horario">
+                                    <input type="radio" id="cpr-horario-2" class="form-input" name="cpr-horario"
+                                        value="de 12:00 a 14:00hs">
+                                    <label class="compra-etiqueta-horario" for="cpr-horario-2"
+                                        data-horario="de 12:00 a 14:00hs">de 12:00 a 14:00hs</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="compra-bloque-horario">
+                                    <input type="radio" id="cpr-horario-3" class="form-input" name="cpr-horario"
+                                        value="de 14:00 a 16:00hs">
+                                    <label class="compra-etiqueta-horario" for="cpr-horario-3"
+                                        data-horario="de 14:00 a 16:00hs">de 14:00 a 16:00hs</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="form-check">
                     <label for="typeBuy">Tipo de pago</label>
                     <div>
-                        <input type="Radio" name="typeBuy" value="Efectivo/Transferencia" checked>
-                        Efectivo/Transferencia
-                        <input type="Radio" name="typeBuy" value="En cuotas"> En cuotas
+                        <input type="Radio" name="typeBuy" value="Efectivo" checked>Efectivo
+                        <input type="Radio" name="typeBuy" value="Transferencia"> Transferencia
+                        <input type="Radio" name="typeBuy" value="En cuotas/credito"> En cuotas/credito
                         <input type="Radio" name="typeBuy" value="Debito"> Debito
                     </div>
+                    <br>
+                    <div class="alert alert-danger alert-dismissible fade show text-center margin-bottom-1x">
+                        <span class="alert-close" data-dismiss="alert"></span>
+                        <i class="fal fa-bells"></i>&nbsp;&nbsp;
+                        <strong>ACLARACIÓN PARA PAGOS CON TARJETAS</strong><br>
+                        El pedido sólo podrá ser retirado por el titular de la tarjeta de la compra<br>
+                        presentando su <strong>DNI</strong> y la <strong>Tarjeta de Débito /
+                            Crédito</strong> con la cual realizó el pago.
+                    </div>
+                    <div class="bloque-blanco-interno">
+                <div class="row">
+                    <div class="col-sm-12">
+                                                                                
+                        <div class="compra-bloque-medios">
+                            <input type="radio" id="cpr-medio-56" class="form-input" name="cpr-medio" value="56">
+                            <label class="compra-etiqueta-medio" for="cpr-medio-56" data-idmedio="56" data-nombre="visa-credito"><img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/visa-credito.jpg" width="65" height="45" alt="Visa"><span class="oculto">Visa</span></label>
+                        </div>                                                                 
+                        <div class="compra-bloque-medios">
+                            <input type="radio" id="cpr-medio-64" class="form-input" name="cpr-medio" value="64">
+                            <label class="compra-etiqueta-medio" for="cpr-medio-64" data-idmedio="64" data-nombre="mastercard-credito"><img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mastercard-credito.jpg" width="65" height="45" alt="Mastercard"><span class="oculto">Mastercard</span></label>
+                        </div>                                                                            
+                        <div class="compra-bloque-medios">
+                            <input type="radio" id="cpr-medio-80" class="form-input" name="cpr-medio" value="80">
+                            <label class="compra-etiqueta-medio" for="cpr-medio-80" data-idmedio="80" data-nombre="naranja-credito"><img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/naranja-credito.jpg" width="65" height="45" alt="Naranja"><span class="oculto">Naranja</span></label>
+                        </div>                                                                            
+                        <div class="compra-bloque-medios">
+                            <input type="radio" id="cpr-medio-98" class="form-input" name="cpr-medio" value="98">
+                            <label class="compra-etiqueta-medio" for="cpr-medio-98" data-idmedio="98" data-nombre="visa-debito"><img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/visa-debito.jpg" width="65" height="45" alt="Visa"><span class="oculto">Visa</span></label>
+                        </div>                                                                            
+                        <div class="compra-bloque-medios">
+                            <input type="radio" id="cpr-medio-99" class="form-input" name="cpr-medio" value="99">
+                            <label class="compra-etiqueta-medio" for="cpr-medio-99" data-idmedio="99" data-nombre="mastercard-debito"><img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mastercard-debito.jpg" width="65" height="45" alt="Mastercard"><span class="oculto">Mastercard</span></label>
+                        </div>                                            
+                        <div class="compra-bloque-medios">
+                            <input type="radio" id="cpr-medio-101" class="form-input" name="cpr-medio" value="101">
+                            <label class="compra-etiqueta-medio" for="cpr-medio-101" data-idmedio="101" data-nombre="maestro-debito"><img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/maestro-debito.jpg" width="65" height="45" alt="Maestro"><span class="oculto">Maestro</span></label>
+                        </div>                                                                           
+                        <div class="compra-bloque-medios">
+                            <input type="radio" id="cpr-medio-2" class="form-input" name="cpr-medio" value="2">
+                            <label class="compra-etiqueta-medio" for="cpr-medio-2" data-idmedio="2" data-nombre="mercado-pago"><img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mercado-pago.jpg" width="65" height="45" alt="Mercado Pago"><span class="oculto">Mercado Pago</span></label>
+                        </div>
+                    </div>
                 </div>
-                <button class="form-submit">Finalizar compra</button> 
+                                    
+                <div class="row">
+                    <div class="col-md-11 bloque-medios-de-pago">
+                        <div class="compra-opcion-bloque compra-opcion-visa-credito">
+                            <input type="radio" id="cpr-opcion-56" class="form-input" name="cpr-opcion" value="56">
+                            <label class="compra-etiqueta-opcion" for="cpr-opcion-56" data-idmedio="56">
+                                <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/visa-credito.jpg" width="32" height="22" alt="Visa"> 
+                                Visa 1 cuota <span class="medio-de-pago-leyenda-web">Sin Interés</span> de <strong>$14.499,00</strong>	                                 
+                            </label>
+                        </div>
+                            <div class="compra-opcion-bloque compra-opcion-visa-credito">
+                                <input type="radio" id="cpr-opcion-58" class="form-input" name="cpr-opcion" value="58">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-58" data-idmedio="58">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/visa-credito.jpg" width="32" height="22" alt="Visa"> 
+                                    Visa 3 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$5.557,95</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-visa-credito">
+                                <input type="radio" id="cpr-opcion-61" class="form-input" name="cpr-opcion" value="61">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-61" data-idmedio="61">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/visa-credito.jpg" width="32" height="22" alt="Visa"> 
+                                    Visa 6 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$2.899,80</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-visa-credito">
+                                <input type="radio" id="cpr-opcion-62" class="form-input" name="cpr-opcion" value="62">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-62" data-idmedio="62">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/visa-credito.jpg" width="32" height="22" alt="Visa"> 
+                                    Visa 9 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$2.174,85</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-visa-credito">
+                                <input type="radio" id="cpr-opcion-63" class="form-input" name="cpr-opcion" value="63">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-63" data-idmedio="63">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/visa-credito.jpg" width="32" height="22" alt="Visa"> 
+                                    Visa 12 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$1.788,21</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-mastercard-credito">
+                                <input type="radio" id="cpr-opcion-64" class="form-input" name="cpr-opcion" value="64">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-64" data-idmedio="64">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mastercard-credito.jpg" width="32" height="22" alt="Mastercard"> 
+                                    Mastercard 1 cuota <span class="medio-de-pago-leyenda-web">Sin Interés</span> de <strong>$14.499,00</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-mastercard-credito">
+                                <input type="radio" id="cpr-opcion-66" class="form-input" name="cpr-opcion" value="66">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-66" data-idmedio="66">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mastercard-credito.jpg" width="32" height="22" alt="Mastercard"> 
+                                    Mastercard 3 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$5.557,95</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-mastercard-credito">
+                                <input type="radio" id="cpr-opcion-69" class="form-input" name="cpr-opcion" value="69">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-69" data-idmedio="69">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mastercard-credito.jpg" width="32" height="22" alt="Mastercard"> 
+                                    Mastercard 6 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$2.996,46</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-mastercard-credito">
+                                <input type="radio" id="cpr-opcion-70" class="form-input" name="cpr-opcion" value="70">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-70" data-idmedio="70">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mastercard-credito.jpg" width="32" height="22" alt="Mastercard"> 
+                                    Mastercard 9 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$2.174,85</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-mastercard-credito">
+                                <input type="radio" id="cpr-opcion-71" class="form-input" name="cpr-opcion" value="71">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-71" data-idmedio="71">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mastercard-credito.jpg" width="32" height="22" alt="Mastercard"> 
+                                    Mastercard 12 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$1.788,21</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-naranja-credito">
+                                <input type="radio" id="cpr-opcion-80" class="form-input" name="cpr-opcion" value="80">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-80" data-idmedio="80">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/naranja-credito.jpg" width="32" height="22" alt="Naranja"> 
+                                    Naranja 6 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$2.899,80</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-naranja-credito">
+                                <input type="radio" id="cpr-opcion-102" class="form-input" name="cpr-opcion" value="102">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-102" data-idmedio="102">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/naranja-credito.jpg" width="32" height="22" alt="Naranja"> 
+                                    Naranja 10 cuotas <span class="medio-de-pago-leyenda-web"></span> de <strong>$1.884,87</strong>											
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-naranja-credito">
+                                <input type="radio" id="cpr-opcion-81" class="form-input" name="cpr-opcion" value="81">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-81" data-idmedio="81">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/naranja-credito.jpg" width="32" height="22" alt="Naranja"> 
+                                        Su compra en plan Z <strong>$15.513,96</strong>
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-visa-debito">
+                                <input type="radio" id="cpr-opcion-98" class="form-input" name="cpr-opcion" value="98">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-98" data-idmedio="98">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/visa-debito.jpg" width="32" height="22" alt="Visa"> <strong>$14.499,00</strong> 
+                                    en 1 pago <span class="medio-de-pago-leyenda-web"></span>
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-mastercard-debito">
+                                <input type="radio" id="cpr-opcion-99" class="form-input" name="cpr-opcion" value="99">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-99" data-idmedio="99">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mastercard-debito.jpg" width="32" height="22" alt="Mastercard"> <strong>$14.499,00</strong>
+                                    en 1 pago <span class="medio-de-pago-leyenda-web"></span>
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-maestro-debito">
+                                <input type="radio" id="cpr-opcion-101" class="form-input" name="cpr-opcion" value="101">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-101" data-idmedio="101">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/maestro-debito.jpg" width="32" height="22" alt="Maestro"> <strong>$14.499,00</strong> 
+                                    en 1 pago <span class="medio-de-pago-leyenda-web"></span>
+                                </label>
+                            </div>
+                            <div class="compra-opcion-bloque compra-opcion-mercado-pago">
+                                <input type="radio" id="cpr-opcion-2" class="form-input" name="cpr-opcion" value="2">
+                                <label class="compra-etiqueta-opcion" for="cpr-opcion-2" data-idmedio="2">
+                                    <img src="https://ockam-cloud-thebest.imgix.net/imagenes/front-end/tarjetas/mercado-pago.jpg" width="65" height="45" alt="Mercado Pago" style="display: block; float: left; margin-right: 15px;"> 
+                                    <div class="leyenda-mercado-pago">
+                                        <strong>$14.499,00 </strong>
+                                        Con tu tarjeta de crédito, débito o efectivo con <strong>Mercado Pago</strong> 
+                                        <span class="medio-de-pago-leyenda-web">
+                                            <br>
+                                            <small>No requiere estar registrado</small>
+                                        </span>
+                                    </div>                               
+                                </label>
+                            </div>                      
+                    </div>
+                </div>
+
+            </div>
+        </div>
+                <div>
+                    <h4><strong>3</strong> - Completá los datos del titular del medio de pago</h4>
+                </div>
+                <div class="bloque-blanco-interno">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-primary alert-dismissible fade show text-center margin-bottom-1x">
+                                <span class="alert-close" data-dismiss="alert"></span>
+                                <i class="icon-bell"></i>&nbsp;&nbsp;
+                                El pedido será entregado únicamente al titular de la compra presentando el documento
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="cpr-nombre">Nombre *</label>
+                                <input class="form-control" type="text" id="cpr-nombre" name="cpr-nombre" value="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="cpr-apellido">Apellido *</label>
+                                <input class="form-control" type="text" id="cpr-apellido" name="cpr-apellido" value="" placeholder="">
+                            </div>
+                        </div>                
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="form-group">
+                                <label for="cpr-doc">Doc Tipo*</label>
+                                <select class="form-control" type="text" id="cpr-doc" name="cpr-doc" value="" placeholder="">
+                                    <option></option>
+                                    <option>DNI</option>
+                                    <option>CI</option>
+                                    <option>LC</option>
+                                    <option>LE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="cpr-doc-numero">Documento Número *</label>
+                                <input class="form-control" type="text" id="cpr-doc-numero" name="cpr-doc-numero" value="" placeholder="" maxlength="8">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-2">
+                            <div class="form-group">
+                                <label for="cpr-nacimiento-dia">Nacimiento</label>
+                                <input class="form-control" type="text" id="cpr-nacimiento-dia" name="cpr-nacimiento-dia" value="" placeholder="DD" maxlength="2">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="form-group">
+                                <label for="cpr-nacimiento-mes">&nbsp;</label>
+                                <input class="form-control" type="text" id="cpr-nacimiento-mes" name="cpr-nacimiento-mes" value="" placeholder="MM" maxlength="2">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="form-group">
+                                <label for="cpr-nacimiento-anio">&nbsp;</label>
+                                <input class="form-control" type="text" id="cpr-nacimiento-anio" name="cpr-nacimiento-anio" value="" placeholder="AAAA" maxlength="4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="cpr-telefono">Teléfono *</label>
+                                <input class="form-control" type="text" id="cpr-telefono" name="cpr-telefono" value="" placeholder="">
+                            </div>
+                        </div>    
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="cpr-correo">E-mail *</label>
+                                <input class="form-control" type="text" id="cpr-correo" name="cpr-correo" value="" placeholder="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">                    
+                        <div class="col-md-12">
+                            <br>
+                            <hr>
+                            <h3>Facturación</h3>
+                            <input class="form-control" type="hidden" id="cpr-facturacion" name="cpr-facturacion" value="CF" placeholder="">
+                        </div>
+                        <div class="col-sm-3">                            
+                            <div class="form-group">
+                                <input type="radio" id="cpr-consumidor-final" class="form-input cpr-radio-factura" data-facturacion="CF" checked="checked" name="cpr-facturacion-selector" value="Consumidor Final">
+                                <label for="cpr-consumidor-final">Consumidor Final</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="radio" id="cpr-factura-a" class="form-input cpr-radio-factura" data-facturacion="RI" name="cpr-facturacion-selector" value="Responsable Inscripto (Factura A)">
+                                <label for="cpr-factura-a">Responsable Inscripto (Factura A)</label>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div class="row contenedor-consumidor-final">
+                        <div class="col-sm-12">
+                        <!--<label for="cpr-comentarios">Comentarios / Observaciones: utilizá el siguiente campo para dejarnos cualquier comentario / observación que creas conveniente</label>-->
+                            <textarea class="form-control" type="text" id="cpr-comentarios" name="cpr-comentarios" placeholder="Comentarios / Observaciones: utilizá este campo para dejarnos cualquier comentario / observación que creas conveniente"></textarea>
+                        </div>
+                    </div>
+                            
+                    <div class="row contenedor-consumidor-final">
+                        <div class="col-md-12">
+                            <br>
+                            <hr>
+                            <h3>Datos de Facturación</h3>
+                        </div>
+                        
+                        <div class="col-sm-6 campo-factura-a">
+                            <div class="form-group">
+                                <label for="cpr-factura-razon-social">Razón Social *</label>
+                                <input class="form-control" type="text" id="cpr-factura-razon-social" name="cpr-factura-razon-social" value="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 campo-factura-a">
+                            <div class="form-group">
+                                <label for="cpr-factura-cuit">CUIT *</label>
+                                <input class="form-control" type="text" id="cpr-factura-cuit" name="cpr-factura-cuit" value="" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="cpr-factura-localidad">Localidad *</label>
+                                <input class="form-control" type="text" id="cpr-factura-localidad" name="cpr-factura-localidad" value="Rosario" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="cpr-factura-provincia">Provincia *</label>
+                                <input class="form-control" type="text" id="cpr-factura-provincia" name="cpr-factura-provincia" value="Santa Fe" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="cpr-factura-postal">Código Postal *</label>
+                                <input class="form-control" type="text" id="cpr-factura-postal" name="cpr-factura-postal" value="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="cpr-factura-direccion">Dirección Completa *</label>
+                                <input class="form-control" type="text" id="cpr-factura-direccion" name="cpr-factura-direccion" value="" placeholder="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                        
+                    
+                </div>
+                <button class="form-submit">Finalizar compra</button>
             </form>
         </div>
         <div class="buyInformation__cartContent">
             <h2>Resumen de compra</h2>
             <div class="buyInformation__cartContent__products"></div>
-            <button class="cart__sideContainer__items__item__main__btnDelete" data-id="22">
-                <i class="fas fa-solid fa-trash" aria-hidden="true"></i>
-            </button>
             <div class="buyInformation__cartContent__resume">
                 <p class="buyInformation__cartContent__resume__total">Total $12312</p>
             </div>
         </div>
     </div>
+
     <template id="template-CartContent">
         <div class="buyInformation__cartContent__products__item">
             <img src="" alt="">
@@ -73,9 +534,15 @@
                 <p class="buyInformation__cartContent__products__item__description__units"></p>
             </div>
             <p class="buyInformation__cartContent__products__item__price"></p>
+            <div class="carrito-modificar">
+                <br>
+                <a href="index.html" class="btn btn-sm btn-danger boton-carrito-modificar"><i
+                        class="fal fa-edit"></i> Agregar / Modificar Productos</a>
+            </div>
         </div>
     </template>
+    
     <script src="./scripts/form.js"></script>
 </body>
-    
+
 </html>
