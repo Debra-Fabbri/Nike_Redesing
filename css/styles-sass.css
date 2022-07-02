@@ -1073,17 +1073,6 @@ label {
     padding: 0;
     margin: 0; }
 
-.btnBackHome {
-  font-size: 1.1rem;
-  position: absolute;
-  top: 45px;
-  left: 100px;
-  cursor: pointer;
-  color: #7f00b2;
-  font-family: 'Rubik', sans-serif; }
-  .btnBackHome:hover {
-    font-weight: 500; }
-
 .buyFinishToasty {
   font-size: 1rem;
   position: absolute;
@@ -1168,6 +1157,8 @@ label {
           border: 1px solid; }
         .buyInformation__form form .form-input.invalid {
           border: 2px solid #ff4719; }
+        .buyInformation__form form .form-input.marg {
+          margin: 10px; }
       .buyInformation__form form .form-element-multiple {
         width: 100%;
         margin: 0;
@@ -1179,8 +1170,8 @@ label {
       .buyInformation__form form .form-check {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        font-size: 1em; }
+        font-size: 1em;
+        border-top: 1px solid; }
         .buyInformation__form form .form-check label {
           font-size: 1.2em;
           margin: .3em 0; }

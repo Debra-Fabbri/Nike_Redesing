@@ -23,20 +23,6 @@
     }
 }
 
-.btnBackHome {
-    font-size: 1.1rem;
-    position: absolute;
-    top: 45px;
-    left: 100px;
-    cursor: pointer;
-    color: #7f00b2;
-    font-family: 'Rubik', sans-serif;
-
-    &:hover {
-        font-weight: 500;
-    }
-}
-
 .buyFinishToasty {
     font-size: 1rem;
     position: absolute;
@@ -140,6 +126,9 @@
                 &.invalid {
                     border: 2px solid #ff4719;
                 }
+                &.marg{
+                    margin: 10px;
+                }
             }
 
             .form-element-multiple {
@@ -157,8 +146,8 @@
             .form-check {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 font-size: 1em;
+                border-top: 1px solid ;
 
                 label {
                     font-size: 1.2em;

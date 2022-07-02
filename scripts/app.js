@@ -182,7 +182,7 @@ const countdown =  (deadline, elem, finalMessage) => {
 
 };
 
-countdown('Jul 20 2022 00:00:00 GMT-0300', 'clock', 'FIN HOT SALE');
+countdown('Nov 02 2022 00:00:00 GMT-0300', 'clock', 'FIN HOT SALE');
 
 
 

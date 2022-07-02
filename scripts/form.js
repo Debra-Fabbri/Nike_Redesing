@@ -84,7 +84,7 @@ btnSubmit.addEventListener('click', (e) => {
         }
     }
 
-})
+});
 
 const resetForm = () => {
     inputEmail.value = '';
@@ -104,9 +104,6 @@ const validateEmail = (email) => {
 btnLogo.addEventListener('click', () => {
     location.href = './index.html';
 })
-btnBackHome.addEventListener('click', () => {
-    location.href = './index.html';
-});
 
 //-----Focus en inputs
 inputEmail.addEventListener('focus', () => {
