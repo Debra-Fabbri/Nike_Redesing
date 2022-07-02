@@ -366,7 +366,7 @@ body {
 
 @media (max-width: 475px) {
   .home {
-    background-image: url(/img/homeMovil.jpg); }
+    background-image: url(../img/homeMovil.jpg); }
   .home__data {
     margin-left: 0px; } }
 
@@ -882,8 +882,6 @@ label {
   padding: 2px; }
 
 @media (max-width: 500px) {
-  .product {
-    height: 120vh; }
   .payment {
     width: 200px; } }
 
@@ -928,7 +926,7 @@ label {
 
 @media (max-width: 470px) {
   .hotSale {
-    background-image: url(/img/women.jpg); }
+    background-image: url(../img/women.jpg); }
   .nsItem {
     display: flex;
     width: 200px;
