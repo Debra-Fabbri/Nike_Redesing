@@ -125,3 +125,16 @@
 .sliderItem:nth-child(5) .sliderPrice {
     color: cornsilk;
 }
+
+@media screen and (max-width:480px) {
+    .sliderImg{
+        width: 90%;
+    }
+
+    .sliderTitle{
+        display: none;
+    }
+    .features{
+        flex-direction: column;
+    }
+}
