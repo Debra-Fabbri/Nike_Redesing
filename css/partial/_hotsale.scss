@@ -1,6 +1,7 @@
 .hotSale {
     display: flex;
     padding: 50px;
+    background: #071b3c;
 }
 
 .hotsale_Item {
@@ -45,9 +46,15 @@
 }
 
 @media (max-width:470px){
-    .nsImg{
+    .hotSale{
+        background-image: url(/img/women.jpg);
+    }
+    .nsItem{
         display: flex;
         width: 200px;
-        height: 200px;
+        height: 550px;
+    }
+    .imagendope{
+        display: none;
     }
 }

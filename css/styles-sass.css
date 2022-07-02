@@ -334,7 +334,8 @@ body {
         outline: 1px solid #fff; } }
 
 .home {
-  background-image: url(../img/home.jpg); }
+  background-image: url(../img/home.jpg);
+  overflow: hidden; }
   .home__container {
     height: 100vh; }
   .home__data {
@@ -362,6 +363,12 @@ body {
     .home__button:hover {
       background-color: #071b3c;
       color: #fff; }
+
+@media (max-width: 475px) {
+  .home {
+    background-image: url(/img/homeMovil.jpg); }
+  .home__data {
+    margin-left: 0px; } }
 
 .cart {
   position: absolute;
@@ -713,7 +720,9 @@ body {
   .sliderTitle {
     display: none; }
   .features {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .menuItem {
+    margin-right: 20px; } }
 
 .features {
   display: flex;
@@ -872,9 +881,16 @@ label {
   cursor: pointer;
   padding: 2px; }
 
+@media (max-width: 500px) {
+  .product {
+    height: 120vh; }
+  .payment {
+    width: 200px; } }
+
 .hotSale {
   display: flex;
-  padding: 50px; }
+  padding: 50px;
+  background: #071b3c; }
 
 .hotsale_Item {
   flex: 1;
@@ -911,10 +927,14 @@ label {
     height: 300px; } }
 
 @media (max-width: 470px) {
-  .nsImg {
+  .hotSale {
+    background-image: url(/img/women.jpg); }
+  .nsItem {
     display: flex;
     width: 200px;
-    height: 200px; } }
+    height: 550px; }
+  .imagendope {
+    display: none; } }
 
 .productsInformation {
   font-size: 1rem;

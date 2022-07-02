@@ -152,3 +152,12 @@ label {
     cursor: pointer;
     padding: 2px;
 }
+
+@media (max-width:500px){
+    .product{
+        height: 120vh;
+    }
+    .payment{
+        width: 200px;
+    }
+}

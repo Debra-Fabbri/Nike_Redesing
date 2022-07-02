@@ -1,5 +1,6 @@
 .home {
     background-image: url(../img/home.jpg);
+    overflow: hidden;
 
     &__container{
         height: 100vh;
@@ -33,5 +34,14 @@
             background-color: #071b3c;
             color: #fff;
         }
+    }
+}
+
+@media (max-width: 475px){
+    .home{
+        background-image: url(/img/homeMovil.jpg);
+    }
+    .home__data{
+        margin-left: 0px;
     }
 }
