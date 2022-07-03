@@ -1,5 +1,5 @@
 .home {
-    background-image: url(../img/home.jpg);
+    background: url(../img/parahome1.jpg);
     overflow: hidden;
 
     &__container{
@@ -16,7 +16,7 @@
         line-height: 1;
         letter-spacing: .5rem;
         margin-bottom: 4rem;
-        color: white;
+        color:  #b82021 ;
         font-weight: 1000;
         & span{
             font-size: 40px;
@@ -42,6 +42,9 @@
         background-image: url(../img/homeMovil.jpg);
     }
     .home__data{
-        margin-left: 0px;
+        margin-left: 10px;
+    }
+    .home__title{
+        color: #fff;
     }
 }

@@ -1,7 +1,8 @@
 .hotSale {
     display: flex;
     padding: 50px;
-    background: #071b3c;
+    background-image: url(../img/nike.gif);
+    height: 125vh;
 }
 
 .hotsale_Item {
@@ -28,6 +29,11 @@
     color: white;
     font-size: 30px;
     padding: 20px;
+}
+
+.nsImg{
+    visibility: hidden;
+    height: 400px;
 }
 
 @media (max-width:992px){
