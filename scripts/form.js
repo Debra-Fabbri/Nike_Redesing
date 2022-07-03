@@ -74,12 +74,12 @@ btnSubmit.addEventListener('click', (e) => {
             localStorage.setItem('cart', JSON.stringify(cart));
             updateCartContent();
             resetForm();
-            finishBuyToastyTitle.textContent = 'Compra Realizada :D';
+            finishBuyToastyTitle.textContent = 'Compra realizada con éxito!';
             finishBuyToastyMessage.textContent = 'Gracias por elegirnos, puede continuar viendo nuestros productos en la pagina Principal';
             finishBuyToasty.classList.add('visible');
         } else {
-            finishBuyToastyTitle.textContent = 'Hay datos incorrectos';
-            finishBuyToastyMessage.textContent = 'Recuerde completar todos los campos y con datos correctos';
+            finishBuyToastyTitle.textContent = 'Hay datos incorrectos o incompletos';
+            finishBuyToastyMessage.textContent = 'Por favor completar todos los campos con datos correctos';
             finishBuyToasty.classList.add('visible');
         }
     }
