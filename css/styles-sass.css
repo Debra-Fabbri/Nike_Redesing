@@ -351,7 +351,8 @@ body {
     letter-spacing: .5rem;
     margin-bottom: 4rem;
     color: #b82021;
-    font-weight: 1000; }
+    font-weight: 1000;
+    visibility: hidden; }
     .home__title span {
       font-size: 40px; }
   .home__button {
@@ -372,7 +373,8 @@ body {
   .home__data {
     margin-left: 10px; }
   .home__title {
-    color: #fff; } }
+    color: #fff;
+    visibility: visible; } }
 
 .cart {
   position: absolute;
